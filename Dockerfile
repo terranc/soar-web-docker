@@ -19,5 +19,5 @@ COPY --from=builder /root/soar /soar-bin/soar
 COPY --from=builder /root/soar-web /soar-web
 
 WORKDIR  /
-EXPOSE 443
-CMD ["/soar-web","--addr","0.0.0.0:5077"]
+EXPOSE 80
+CMD ["/soar-web","--addr","0.0.0.0:80"]
