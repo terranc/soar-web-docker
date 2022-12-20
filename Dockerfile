@@ -20,4 +20,4 @@ COPY --from=builder /root/soar-web /soar-web
 
 WORKDIR  /
 EXPOSE 5077
-CMD ["/soar-web","--addr","0.0.0.0:5077"]
+CMD ["/soar-web","--addr","0.0.0.0"]
